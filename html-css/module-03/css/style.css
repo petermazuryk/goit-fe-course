@@ -17,7 +17,7 @@ body {
     width: 900px;
     height: auto;
     margin: 0 auto;
-    font-size: 0;
+    /* font-size: 0; */
 }
 
 .tag-header {
@@ -47,6 +47,7 @@ body {
 }
 
 .menu-list a {
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
@@ -56,14 +57,29 @@ body {
 .menu-list a:focus {
     color: blue;
 }
+
 .blog {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
+}
+
+/* Нада отдельно выучить */
+.hiden-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .blog-list {
     list-style: none;
     font-size: 0;
-    margin: 0;
+    margin-bottom: 55px;
     padding: 0;
 }
 
@@ -81,29 +97,36 @@ body {
 }
 
 .blog-list-item:nth-last-child(-n + 2) {
-    margin-bottom: 55px;
+    margin-bottom: 0px;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-list-item img {
+    margin-bottom: 30px;
 }
 
 .lifestile,
 .photodiary {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     margin-bottom: 35px;
-    opacity: 0.5;
     text-transform: uppercase;
 }
 
-.blog-list-item h2 {
+.blog-list-item h3 {
     font-size: 20px;
     font-weight: 500;
     word-spacing: normal;
+    margin-bottom: 40px;
 }
 
 p {
     font-size: 12px;
-}
-
-.lorem {
-    padding-top: 40px;
     word-break: break-all;
     text-align: justify;
 }
@@ -120,6 +143,7 @@ p {
     text-align: center;
     font-size: 16px;
 }
+
 .load:hover,
 .load:focus {
     color: blue;
