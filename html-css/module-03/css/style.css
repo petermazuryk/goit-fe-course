@@ -17,7 +17,6 @@ body {
     width: 900px;
     height: auto;
     margin: 0 auto;
-    /* font-size: 0; */
 }
 
 .tag-header {
@@ -47,7 +46,7 @@ body {
 }
 
 .menu-list a {
-    display: inline-block;
+    display:block;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
@@ -98,7 +97,6 @@ body {
 
 .blog-list-item:nth-last-child(-n + 2) {
     margin-bottom: 0px;
-
 }
 
 img {
@@ -113,7 +111,6 @@ img {
 
 .lifestile,
 .photodiary {
-    /* padding-top: 30px; */
     margin-bottom: 35px;
     text-transform: uppercase;
 }
