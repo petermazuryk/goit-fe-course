@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.tag-header {
+    margin-bottom: 100px;
+}
+
+.navigation {
+    padding-top: 75px;
+}
+
+.menu-list {
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu-list li {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.menu-list li:not(:last-child) {
+    margin-right: 120px;
+}
+
+.menu-list a {
+    display:block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+    color: blue;
+}
+
+.blog {
+    padding-bottom: 70px;
+}
+
+<<<<<<< HEAD
+=======
+/* Нада отдельно выучить */
+>>>>>>> внесено изменение класа visually-hidden
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.blog-list {
+    list-style: none;
+    font-size: 0;
+    margin-bottom: 55px;
+    padding: 0;
+}
+
+.blog-list-item {
+    width: 420px;
+    height: auto;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 140px;
+}
+
+.blog-list-item:not(:nth-child(2n)) {
+    margin-right: 60px;
+}
+
+.blog-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-list-item img {
+    margin-bottom: 30px;
+}
+
+.lifestile,
+.photodiary {
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.blog-list-item h3 {
+    font-size: 20px;
+    font-weight: 500;
+    word-spacing: normal;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 12px;
+    word-break: break-all;
+    text-align: justify;
+}
+
+.load {
+    display: block;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 0;
+    width: 160px;
+    height: 60px;
+    color: black;
+    background: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.load:hover,
+.load:focus {
+    color: blue;
+    background: lightgray;
+}
