@@ -61,6 +61,10 @@ body {
     padding-bottom: 70px;
 }
 
+<<<<<<< HEAD
+=======
+/* Нада отдельно выучить */
+>>>>>>> be7446e4626778df1203b72e65b723a3b9e6b66e
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -72,6 +76,7 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+    
 }
 
 .blog-list {
