@@ -1,0 +1,265 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: white;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1110px;
+    height: auto;
+    margin: 0 auto;
+    /* background: gray; */
+}
+
+.navigation {
+    padding: 75px 0;
+    font-size: 0;
+}
+
+.site-logo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.site-logo::first-letter {
+    color: #1abc9c;
+}
+
+.site-logo span {
+    font-weight: bold;
+}
+
+.menu-list {
+    display: inline-block;
+    width: 1030px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.menu-list li {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.menu-list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu-list a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+    color: blue;
+}
+
+
+/* .tag-header {
+    margin-bottom: 105px;
+} */
+
+.feautured-products {
+    display: inline-block;
+    font-size: 0;
+}
+
+.product-list {
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.title {
+    font-size: 48px;
+    letter-spacing: -1px;
+    color: #515151;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.title:after {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    width: 165px;
+    border: 3px solid #1abc9c;
+    margin-top: 30px;
+}
+
+.product-list-item {
+    display: inline-block;
+    width: 255px;
+    height: auto;
+    margin-bottom: 30px;
+    font-size: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-list-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.product-list-item:nth-last-child(-n+4) {
+    margin-bottom: 0px;
+}
+
+.product-name {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background-color:#323232;
+    font-family: "Roboto";
+    font-weight: 800;
+    padding-left: 16px;
+    padding-top: 14px;
+}
+
+.product-price {
+    display: inline-block;
+    width: 55px;
+    height: 40px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background-color: gray;
+    font-family: "Roboto";
+    font-weight: 800;
+    text-align: center;
+    padding-top: 14px;
+}
+.product-name:hover,
+.product-name:focus {
+    color: white;
+    background: #1abc9c;
+}
+.product-price:hover,
+.product-price:focus {
+    color: white;
+    background: #1abc9c;
+}
+
+.title2 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    color: #515151;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.title2:after {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    width: 165px;
+    border: 2px solid #1abc9c;
+    margin-top: 30px;
+}
+
+.last-news {
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.last-news-item {
+    display: inline-block;
+    width: 350px;
+    height: auto;
+}
+
+.last-news-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+/* .last-news li:not(:last-child) {
+    margin-right: 30px;
+} */
+
+.news-title {
+    font-size: 16px;
+    line-height: 17px;
+    word-break: break-all;
+    font-weight: 300;
+    vertical-align: 15px;
+    line-height: 1.3rem;
+    margin-bottom: 45px;
+    padding-top: 20px;
+}
+
+.news-title::after {
+    content: "";
+    display: block;
+    width: 165px;
+    border: 2px solid #1abc9c;
+    margin-top: 15px;
+}
+
+.news-text {
+    font-size: 14px;
+    word-break: break-all;
+    text-align: justify;
+    vertical-align: 15px;
+    line-height: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.news-button {
+    display: block;
+    border: transparent;
+    padding: 0;
+    width: 160px;
+    height: 60px;
+    color: black;
+    background: white;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background: #1abc9c;
+    border-radius: 5px;
+}
+
+.news-button:hover,
+.news-button:focus {
+    color: black;
+    background: yellowgreen;
+}
