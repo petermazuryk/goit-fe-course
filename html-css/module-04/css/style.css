@@ -10,29 +10,29 @@ html {
 
 body {
     background: white;
-    /* font-family: 'Playfair Display', serif; */
     font-family: 'Roboto', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .container {
     width: 1110px;
     height: auto;
     margin: 0 auto;
-    /* background: gray; */
+    overflow: hidden;
 }
 
 .navigation {
     padding: 75px 0;
     font-size: 0;
+    font-family: "Open Sans", sans-serif;
 }
 
 .site-logo {
-    display: inline-block;
-    vertical-align: middle;
     font-size: 24px;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    float: left;
 }
 
 .site-logo::first-letter {
@@ -44,19 +44,14 @@ body {
 }
 
 .menu-list {
-    display: inline-block;
-    width: 1030px;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
     list-style: none;
-    text-align: right;
-    vertical-align: middle;
+    float: right;
 }
 
 .menu-list li {
-    display: inline-block;
     font-size: 14px;
+    float: left;
+    padding-top: 5px;
 }
 
 .menu-list li:not(:last-child) {
@@ -77,31 +72,29 @@ body {
     color: blue;
 }
 
-
-/* .tag-header {
-    margin-bottom: 105px;
-} */
-
-.feautured-products {
+.sections {
     display: inline-block;
     font-size: 0;
+    height: auto;
+    padding-bottom: 100px;
 }
 
 .product-list {
     list-style: none;
     font-size: 0;
     padding: 0;
-    margin-bottom: 100px;
 }
 
 .title {
     font-size: 48px;
+    line-height: 48px;
     letter-spacing: -1px;
     color: #515151;
     font-weight: 800;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 90px;
+    font-family: "Roboto";
 }
 
 .title:after {
@@ -114,12 +107,13 @@ body {
 }
 
 .product-list-item {
-    display: inline-block;
-    width: 255px;
+    max-width: 255px;
     height: auto;
     margin-bottom: 30px;
     font-size: 0;
+    float: left;
 }
+
 
 img {
     display: block;
@@ -140,20 +134,22 @@ img {
     width: 200px;
     height: 40px;
     font-size: 14px;
+    line-height: 40px;
     text-transform: uppercase;
     letter-spacing: 0px;
     color: #ffffff;
-    background-color:#323232;
+    background-color: #323232;
     font-family: "Roboto";
     font-weight: 800;
+    margin: 0;
     padding-left: 16px;
-    padding-top: 14px;
 }
 
 .product-price {
     display: inline-block;
     width: 55px;
     height: 40px;
+    line-height: 40px;
     font-size: 14px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -161,16 +157,10 @@ img {
     font-family: "Roboto";
     font-weight: 800;
     text-align: center;
-    padding-top: 14px;
+    margin: 0;
 }
-.product-name:hover,
-.product-name:focus {
-    color: white;
-    background: #1abc9c;
-}
-.product-price:hover,
-.product-price:focus {
-    color: white;
+
+.product-img:hover p {
     background: #1abc9c;
 }
 
@@ -182,6 +172,7 @@ img {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 80px;
+    font-family: "Roboto";
 }
 
 .title2:after {
@@ -198,12 +189,11 @@ img {
     font-size: 0;
     padding: 0;
     margin: 0;
-    margin-bottom: 80px;
 }
 
 .last-news-item {
-    display: inline-block;
-    width: 350px;
+    float: left;
+    max-width: 350px;
     height: auto;
 }
 
@@ -220,10 +210,8 @@ img {
     line-height: 17px;
     word-break: break-all;
     font-weight: 300;
-    vertical-align: 15px;
-    line-height: 1.3rem;
+    margin-top: 0;
     margin-bottom: 45px;
-    padding-top: 20px;
 }
 
 .news-title::after {
@@ -232,6 +220,11 @@ img {
     width: 165px;
     border: 2px solid #1abc9c;
     margin-top: 15px;
+}
+
+.news-img {
+    margin-bottom: 30px;
+    font-family: "Open Sans";
 }
 
 .news-text {
@@ -243,23 +236,23 @@ img {
     margin-bottom: 30px;
 }
 
-.news-button {
-    display: block;
+.read-more {
+    float: left;
     border: transparent;
-    padding: 0;
-    width: 160px;
     height: 60px;
-    color: black;
-    background: white;
+    line-height: 60px;
+    font-size: 14px;
     text-align: center;
-    font-size: 16px;
+    text-decoration: none;
+    padding: 0 45px;
+    color: black;
     color: white;
     background: #1abc9c;
     border-radius: 5px;
 }
 
-.news-button:hover,
-.news-button:focus {
+.read-more:hover,
+.read-more:focus {
     color: black;
     background: yellowgreen;
 }
