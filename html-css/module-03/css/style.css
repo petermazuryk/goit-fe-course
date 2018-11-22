@@ -64,7 +64,10 @@ body {
 <<<<<<< HEAD
 =======
 /* Нада отдельно выучить */
+<<<<<<< HEAD
 >>>>>>> be7446e4626778df1203b72e65b723a3b9e6b66e
+=======
+>>>>>>> внесено изменение класа visually-hidden
 .visually-hidden {
     position: absolute;
     width: 1px;
