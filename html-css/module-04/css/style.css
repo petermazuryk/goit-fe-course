@@ -23,11 +23,17 @@ body {
 
 .navigation {
     padding: 75px 0;
-    font-size: 0;
     font-family: "Open Sans", sans-serif;
 }
 
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+    }
+
 .site-logo {
+    display: block;
     font-size: 24px;
     text-transform: uppercase;
     text-decoration: none;
@@ -51,7 +57,6 @@ body {
 .menu-list li {
     font-size: 14px;
     float: left;
-    padding-top: 5px;
 }
 
 .menu-list li:not(:last-child) {
@@ -94,7 +99,7 @@ body {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 90px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
 }
 
 .title:after {
@@ -139,7 +144,7 @@ img {
     letter-spacing: 0px;
     color: #ffffff;
     background-color: #323232;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: 800;
     margin: 0;
     padding-left: 16px;
@@ -153,8 +158,9 @@ img {
     font-size: 14px;
     letter-spacing: 0px;
     color: #ffffff;
-    background-color: gray;
-    font-family: "Roboto";
+    background-color: #323232;
+    opacity: 0.5;
+    font-family: "Roboto", sans-serif;
     font-weight: 800;
     text-align: center;
     margin: 0;
@@ -172,7 +178,7 @@ img {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 80px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
 }
 
 .title2:after {
@@ -195,6 +201,7 @@ img {
     float: left;
     max-width: 350px;
     height: auto;
+    font-family: "Open Sans", sans-serif;
 }
 
 .last-news-item:not(:nth-child(3n)) {
@@ -224,7 +231,6 @@ img {
 
 .news-img {
     margin-bottom: 30px;
-    font-family: "Open Sans";
 }
 
 .news-text {
@@ -237,14 +243,14 @@ img {
 }
 
 .read-more {
-    float: left;
+    display:block;
     border: transparent;
     height: 60px;
     line-height: 60px;
     font-size: 14px;
     text-align: center;
     text-decoration: none;
-    padding: 0 45px;
+    width: 160px;
     color: black;
     color: white;
     background: #1abc9c;
