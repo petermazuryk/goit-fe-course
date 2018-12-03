@@ -257,9 +257,10 @@ img {
     margin: 0;
 }
 
-.product-img:hover p {
+.product-list-item:hover p {
     background: #1abc9c;
 }
+
 
 .modal {
     opacity: 0;
