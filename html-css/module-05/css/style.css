@@ -19,16 +19,8 @@ body {
     width: 1200px;
 }
 
-.middle {
-    display: block;
-    position: relative;
-    width: 1110px;
-    overflow: hidden;
-    border: none;
-}
-
 .navigation {
-    padding: 75px 0;
+    padding: 40px 0;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -87,17 +79,6 @@ body {
     object-fit: contain;
 }
 
-.banner:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
 .slider-button {
     height: 600px;
     margin: 0 auto;
@@ -109,14 +90,17 @@ body {
     width: 100px;
     height: 100px;
     display: inline-block;
-    background-color: #4ec6ab;
     margin: 0;
     padding: 0;
     border: none;
     top: 50%;
     transform: translateY(-50%);
     opacity: .5;
-    z-index: 2;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4ec6ab;
 }
 
 .right {
@@ -279,12 +263,18 @@ img {
 }
 
 .product-list-item:hover .modal-buttons {
-    position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
     width: 180px;
     height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-buttons {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -314,8 +304,8 @@ img {
 }
 
 .modal-buttons a:hover {
-    color: white;
-    background: #1abc9c;
+    background-color: rgb(26, 188, 156);
+    border: 1px solid rgb(26, 188, 156);
 }
 
 .modal-buttons1 {
