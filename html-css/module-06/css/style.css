@@ -342,10 +342,10 @@ img {
 .footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 65px;
     width: 100%;
     font-size: 0;
-    line-height: 90px;
     font-weight: normal;
     text-decoration: none;
 }
