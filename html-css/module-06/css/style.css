@@ -241,6 +241,7 @@ img {
 }
 
 .team-p {
+    display: block;
     width: 960px;
     font-size: 15px;
     line-height: 24px;
