@@ -20,15 +20,18 @@ body {
     width: 1200px;
 }
 
+.site-header {
+    margin-bottom: 105px;
+}
 .navigation {
     display: flex;
     min-height: 80px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 105px;
 }
 
 .site-logo {
+    display: block;
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
@@ -87,6 +90,10 @@ body {
 
 /*  Section  "service"*/
 
+.service {
+    padding-bottom: 96px;
+}
+
 .service-h2 {
     font-size: 24px;
     color: #333333;
@@ -102,6 +109,7 @@ body {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 110px;
 }
 
 .service-h3::after {
@@ -117,16 +125,16 @@ body {
 .service-items {
     display: flex;
     height: auto;
-    margin-top: 65px;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-size: 0;
 }
 
 .service-items li {
     display: flex;
+    position: relative;
     width: 380px;
     margin-bottom: 100px;
+    padding-left: 80px;
     flex-wrap: wrap;
     justify-content: flex-start;
     justify-content: space-between;
@@ -141,17 +149,17 @@ body {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    width: 300px;
+    /* width: 300px; */
     padding-bottom: 18px;
 }
 
 .service-item-p {
-    width: 300px;
+    /* width: 300px; */
     font-size: 15px;
     line-height: 24px;
     color: #999999;
     font-family: 'Roboto', sans-serif;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 img {
@@ -162,8 +170,11 @@ img {
 
 .service-item-a {
     display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 80px;
-    height: auto;
+    height: 80px;
     color: #95e1d3;
     background-repeat: no-repeat;
     background-position: 20px 0;
@@ -198,9 +209,7 @@ img {
 
 
 .our-team {
-    margin-top: 96px;
     font-size: 0;
-    border-bottom: 1px solid #e5e5e5;
 }
 
 .team-h2 {
@@ -211,16 +220,17 @@ img {
     margin-bottom: 25px;
 }
 
-.team-h1 {
+.team-h3 {
     font-size: 30px;
     color: #333333;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
-.team-h1::after {
+.team-h3::after {
     content: " ";
     display: block;
     width: 60px;
@@ -232,14 +242,13 @@ img {
 
 .team-p {
     width: 960px;
-    min-height: 130px;
     font-size: 15px;
     line-height: 24px;
     color: #999999;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-bottom: 85px;
 }
 
 .team {
@@ -251,6 +260,9 @@ img {
 
 .team-people {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 200ms linear;
 }
 
 .team-img {
@@ -258,7 +270,7 @@ img {
     transition: all 200ms linear;
 }
 
-.team-img:hover {
+.team-people:hover .team-img {
     transform: translate(-10px, -10px);
 }
 
@@ -287,6 +299,8 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 470px;
     transition: all 200ms linear;
     background: linear-gradient(72deg, rgba(243, 213, 133, .9), rgba(255, 133, 136, .9));
     background-position: 50% 50%;
@@ -301,17 +315,20 @@ img {
 .social-icons {
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 380px;
-    height: 470px;
+    width: 224px;
     border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .social-icons a {
     display: block;
-    width: 56px;
-    height: 56px;
+    width: 55px;
+    height: 55px;
     background-repeat: no-repeat;
     background-position: center;
     text-decoration: none;
@@ -344,7 +361,7 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 65px;
-    width: 100%;
+    border-top: 1px solid #e5e5e5;
     font-size: 0;
     font-weight: normal;
     text-decoration: none;
@@ -361,6 +378,7 @@ img {
 
 .footer a,
 p {
+    display: inline-block;
     font-size: 14px;
     color: #333333;
     font-family: 'Montserrat', sans-serif;
