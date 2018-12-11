@@ -166,47 +166,51 @@ img {
 
 .service-items::before{
     content: "";
-    display: block;
+    display: inline-block;
     position: absolute;
-    left: 0;
+    left: 25px;
     top: 0;
+    width: 32px;
+    height: 32px;
     color: #95e1d3;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .alarm {
     background-image: url(../img/icons/icon-alarm.png);
     background-repeat: no-repeat;
-    background-position: 20px 0;
+    background-position: 25px 0;
 }
 
 .line-graph{
     background-image: url(../img/icons/icon-line-graph.png);
     background-repeat: no-repeat;
-    background-position: 20px 0;
+    background-position: 25px 0;
 }
 
 .computer {
     background-image: url(../img/icons/icon-computer.png);
     background-repeat: no-repeat;
-    background-position: 20px 0;
+    background-position: 25px 0;
 }
 
 .book {
     background-image: url(../img/icons/icon-book.png);
     background-repeat: no-repeat;
-    background-position: 20px 0;
+    background-position: 25px 0;
 }
 
 .home {
     background-image: url(../img/icons/icon-home.png);
     background-repeat: no-repeat;
-    background-position: 20px 0;
+    background-position: 25px 0;
 }
 
 .digital {
     background-image: url(../img/icons/icon-gigital.png);
     background-repeat: no-repeat;
-    background-position: 20px 0;
+    background-position: 25px 0;
 }
 
 
