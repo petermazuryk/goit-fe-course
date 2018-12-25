@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <header class="site-header container">
-        <nav class="navigation">
+    <header class="site-header">
+        <nav class="navigation container">
             <a class="site-logo" href="#">Golden</a>
             <ul class="menu">
                 <li><a href="#">home</a></li>
@@ -25,8 +25,8 @@
         </nav>
 
     </header>
-    <main class="container">
-        <section class="service">
+    <main>
+        <section class="service container">
             <h2 class="service-h2">service</h2>
             <p class="service-p">Proin iaculis purus consequat sem cure.</p>
             <ul class="service-list">
@@ -48,21 +48,23 @@
             </ul>
         </section>
         <section class="contact">
-            <h2 class="contact-title">contact us</h2>
-            <p class="contact-sub-title">Proin iaculis purus consequat sem cure.</p>
-            <form class="client-form" action="#" method="POST">
-                <div class="contact-field">
-                    <input type="text" name="client-name" placeholder="your name *" required autocomplete="on">
-                    <input type="email" name="client-email" placeholder="your e-mail *" required>
-                    <input type="text" name="problems" placeholder="subject" required>
-                </div>
-                <div class="message-field">
-                    <textarea name="mesages" placeholder="your message *" cols="10" rows="10"></textarea>
-                </div>
-                <div class="contact-btn">
-                    <button type="submit">send message</button>
-                </div>
-            </form>
+            <div class="container">
+                <h2 class="contact-title">contact us</h2>
+                <p class="contact-sub-title">Proin iaculis purus consequat sem cure.</p>
+                <form class="client-form" action="#" method="POST">
+                    <div class="message-field">
+                        <div class="contact-field">
+                            <input type="text" name="client-name" placeholder="your name *" required autocomplete="on">
+                            <input type="email" name="client-email" placeholder="your e-mail *" required>
+                            <input type="text" name="problems" placeholder="subject">
+                        </div>
+                        <textarea name="mesages" placeholder="your message *"></textarea>
+                    </div>
+                    <div class="contact-btn">
+                        <button class="contact-btn" type="submit">send message</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 </body>

@@ -228,31 +228,16 @@ body {
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-a,
-ul,
-li,
-h2,
-h3,
-p {
-    font-size: 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .container {
-    width: 1400px;
+    width: 940px;
     margin: 0 auto;
-    background-color: #fff;
+
 }
 
 /* HEADER */
 
-.site-header {
-
-    padding-bottom: 130px;
+.site-header, main {
+    background-color: #fff;
 }
 
 .navigation {
@@ -260,7 +245,6 @@ p {
     justify-content: space-between;
     align-items: flex-end;
     height: 50px;
-    width: 940px;
     margin: 0 auto;
     padding: 0;
 }
@@ -284,13 +268,17 @@ p {
 }
 
 .menu a {
+    display: block;
     font-size: 14px;
-    color: #323232;
+    color: #222222;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     text-align: center;
     transition: all 300ms linear;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
 }
 
 .menu a:hover {
@@ -301,10 +289,8 @@ p {
 /* SECTION SERVICE */
 
 .service {
-    background-color: #ffffff;
-    width: 940px;
     margin: 0 auto;
-    margin-bottom: 125px;
+    padding: 125px 0;
 }
 
 .service-h2 {
@@ -316,6 +302,7 @@ p {
     font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .service-p {
@@ -327,7 +314,7 @@ p {
     font-style: italic;
     text-align: center;
     text-transform: none;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .service-list {
@@ -338,10 +325,8 @@ p {
 .service-list li {
     display: flex;
     width: 290px;
-    padding-top: 105px;
     flex-direction: column;
     text-align: center;
-    position: relative;
 }
 
 .service-item h3 {
@@ -350,7 +335,6 @@ p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    padding-top: 20px;
     margin-bottom: 18px;
 }
 
@@ -378,12 +362,10 @@ img {
     border-radius: 100%;
     background-color: #ffffff;
     border: 3px solid #fed136;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0 auto;
+    margin-bottom: 28px;
 }
 
 .basket::before {
@@ -406,16 +388,18 @@ img {
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-position: 100% 0;
+    padding: 110px 0;
 }
 
 .contact-title {
     font-size: 40px;
+    color: #ffffff;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     text-align: center;
     margin-bottom: 25px;
-    padding-top: 110px;
+    text-transform: uppercase;
 }
 
 .contact-sub-title {
@@ -430,16 +414,10 @@ img {
     margin-bottom: 75px;
 }
 
-.client-form {
-    width: 940px;
-    margin: 0 auto;
+.message-field {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-}
-
-.client-form div:nth-child(3) {
-    margin: 0 auto;
 }
 
 .contact-field {
@@ -465,8 +443,18 @@ img {
     border-radius: 2px;
 }
 
-.contact-field input:nth-child(3) {
+.contact-field input:last-child {
     margin-bottom: 0;
+}
+
+.client-form input[type="email"]:focus:valid,
+.client-form input[type="text"]:focus:valid {
+    outline: green solid 1px;
+}
+
+.client-form input[type="email"]:focus:invalid,
+.client-form input[type="text"]:focus:invalid {
+    outline: red solid 1px;
 }
 
 textarea {
@@ -486,29 +474,25 @@ textarea {
     resize: none;
 }
 
-button {
+.contact-btn {
+    display: block;
     border: none;
     width: 240px;
     height: 65px;
     border-radius: 3px;
-    background-color: #fed136;
+    background-color: inherit;
     font-size: 18px;
     color: #ffffff;
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    margin: 30px 0 auto;
+    margin: 0 auto;
+    margin-top: 30px;
     padding: 0;
     cursor: pointer;
 }
 
-.client-form input[type="email"]:focus:valid,
-.client-form input[type="text"]:focus:valid {
-    outline: green solid 1px;
-}
-
-.client-form input[type="email"]:focus:invalid,
-.client-form input[type="text"]:focus:invalid {
-    outline: red solid 1px;
+button:hover {
+    background-color: #fed136;
 }
