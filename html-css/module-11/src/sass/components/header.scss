@@ -1,0 +1,45 @@
+.site__header {
+  position: relative;
+  height: 1000px;
+  z-index: 10;
+}
+
+.site__header--title {
+  font-size: $fz+58px;
+  color: $clrw;
+  font-family: $ffk;
+  font-weight: 400;
+  text-align: $tac;
+  padding-top: 190px;
+  margin-bottom: 60px;
+}
+
+.site__header--subtitle {
+  display: block;
+  width: 820px;
+  margin: auto;
+  font-size: $fz*10+10px;
+  line-height: 140px;
+  text-transform: uppercase;
+  color: $clrw;
+  font-family: $ffm;
+  font-weight:$fw;
+  text-align: $tac;
+  margin-bottom: 130px;
+}
+
+.site__header--btn {
+  display: block;
+  margin: auto;
+  font-size: $fz;
+  color: $clrw;
+  font-family: $ffm;
+  font-weight: $fw;
+  text-align: $tac;
+  text-transform: uppercase;
+  width: 160px;
+  height: 40px;
+  background-color: rgba($clrd, 0);
+  border: 3px solid $clrw;
+}
+
