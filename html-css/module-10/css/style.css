@@ -34,6 +34,7 @@ img {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    margin-bottom: 50px;
 }
 
 .wrapper::after{
@@ -62,6 +63,7 @@ img {
     min-height: 80px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 190px;
 }
 
 .navigation__logo {
