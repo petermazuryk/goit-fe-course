@@ -36,7 +36,6 @@ font-size: $fz;
 color: $clrd;
 font-family: $ffm;
 text-transform: uppercase;
-// padding-bottom: 18px;
 }
 
 .service__items--about {
@@ -44,7 +43,7 @@ font-size: $fz+1px;
 line-height: 24px;
 color: #999999;
 font-family: $ffr;
-// padding-left: 80px;
+padding-left: 80px;
 }
 
 .service__icon {
