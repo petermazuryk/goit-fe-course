@@ -81,13 +81,13 @@
 
 .our-team__svg {
   display: block;
-  width: 32px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   fill: $clrp;
-
-  &:hover {
-  fill: #fff;
 }
+
+.our-team__social-link:hover .our-team__svg {
+  fill: #fff;
 }
 
 

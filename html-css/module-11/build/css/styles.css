@@ -664,6 +664,7 @@ img {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 85px;
+  text-align: center;
 }
 
 .our-team__list {
@@ -752,12 +753,12 @@ img {
 
 .our-team__svg {
   display: block;
-  width: 32px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   fill: #f38181;
 }
 
-.our-team__svg:hover {
+.our-team__social-link:hover .our-team__svg {
   fill: #fff;
 }
 
