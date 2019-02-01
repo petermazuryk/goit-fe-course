@@ -60,12 +60,12 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.87rem;
+  font-size: 14px;
   text-align: center;
-  padding: .5rem 0rem;
+  padding: 8px 0;
   cursor: pointer;
-  border-radius: 1.1rem;
-  height: 2.25rem;
+  border-radius: 18px;
+  height: 36px;
   border: 2px solid transparent;
 }
 
@@ -77,7 +77,7 @@ img {
 
 .site-logo {
   /* display: block; */
-  font-size: 1.25rem;
+  font-size: 20px;
   color: #ffffff;
   font-family: "Montserrat";
   font-weight: 700;
@@ -85,7 +85,7 @@ img {
   text-decoration: none;
   list-style: none;
   text-align: center;
-  padding: .5rem 0rem;
+  padding: 8px 0rem;
 }
 
 .site-logo:hover {
@@ -95,28 +95,29 @@ img {
 }
 
 .promo-title {
-  font-size: 1.9rem;
+  display: block;
+  font-size: 30px;
   color: #ffffff;
   font-family: "Montserrat";
   font-weight: 700;
-  line-height: 1.9rem;
-  padding-top: 2.5rem;
-  margin-bottom: 1.25rem;
-
+  line-height: 30px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  margin: auto;
 }
 
 .promo-subtitle {
-  font-size: 1.12rem;
+  font-size: 18px;
   color: #ffffff;
   font-family: "Roboto";
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 .promo-btn {
-  width: 17.5rem;
-  height: 2.5rem;
-  font-size: 0.87rem;
+  width: 280px;
+  height: 40px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Montserrat";
   font-weight: 700;
@@ -124,7 +125,7 @@ img {
 }
 
 .btn {
-  border-radius: 1.12rem;
+  border-radius: 18px;
   background-color: #ff4e50;
 }
 
@@ -134,12 +135,12 @@ img {
 }
 
 .partners-title {
-  padding-top: 4.3rem;
-  font-size: 1.37rem;
+  padding-top: 70px;
+  font-size: 22px;
   color: #333333;
   font-family: "Montserrat";
   font-weight: 700;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .partners-list [class*="col-"] {
@@ -198,20 +199,20 @@ img {
 }
 
 .patner-name {
-  height: 1.12rem;
-  width: 14rem;
-  font-size: 0.9rem;
+  height: 18px;
+  width: 224px;
+  font-size: 15px;
   color: #333333;
   font-family: "Montserrat";
   font-weight: 700;
   padding-top: 1.56rem;
   margin: 0 auto;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .patner-about {
-  width: 14rem;
-  font-size: 0.9rem;
+  width: 224px;
+  font-size: 15px;
   color: #666666;
   font-family: "Roboto";
   font-weight: 300;
@@ -219,14 +220,14 @@ img {
 }
 
 .patner-btn {
-  width: 17.5rem;
-  height: 2.5rem;
-  font-size: 0.87rem;
+  width: 280px;
+  height: 40px;
+  font-size: 14px;
   color: #ffffff;
   font-family: "Montserrat";
   font-weight: 700;
   margin: auto;
-  margin-bottom:3.4rem;
+  margin-bottom:55px;
   cursor: pointer;
 }
 
@@ -243,14 +244,14 @@ img {
   }
 
   .promo-title {
-    font-size: 3.25rem;
-    line-height: 3.25rem;
-    margin-bottom: 2.8rem;
+    font-size: 52px;
+    line-height: 52px;
+    margin-bottom: 45px;
     padding: 0;
   }
 
   .promo-subtitle {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 2.18rem;
   }
 
