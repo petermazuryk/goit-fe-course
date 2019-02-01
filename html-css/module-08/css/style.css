@@ -222,12 +222,10 @@ img {
 }
 
 .partners-promo_patner-name {
-  height: 18px;
   font-size: 14px;
   color: #333333;
   font-family: "Montserrat";
   font-weight: 700;
-  padding-top: 25px;
   margin-bottom: 20px;
 }
 
@@ -277,14 +275,15 @@ img {
   .page {
     height: 700px;
   }
-
+  .site-header {
+    margin-bottom: 150px;
+  }
   .navigation {
     display: flex;
     padding-top: 35px;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 150px;
   }
 
   .navigation_login {
@@ -379,10 +378,11 @@ img {
 
   /* SECTION PARTNERS */
 
-  .partners-promo_promo {
+  .partners-promo {
     display: block;
     box-sizing: border-box;
     padding-top: 70px;
+    padding-bottom: 75px;
   }
 
   .partners-promo_title {
@@ -401,6 +401,5 @@ img {
 
   .partners-promo_btn {
     width: 192px;
-    margin-bottom: 75px;
   }
 }
