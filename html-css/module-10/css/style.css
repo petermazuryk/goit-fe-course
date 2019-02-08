@@ -175,6 +175,7 @@ img {
  /* Section  "service" */
 
 .service {
+    padding-top: 55px;
     padding-bottom: 96px;
 }
 
@@ -385,6 +386,11 @@ img {
     transition: all 200ms linear;
 }
 
+.our-team__social-link:hover {
+    background-color: #f38181;
+}
+
+
 .our-team__svg {
     display: block;
     width: 32px;
@@ -465,4 +471,9 @@ p {
     border: none;
     margin: 0;
     padding: 0;
+}
+
+.footer__subcribe--btn:hover {
+    color: #95e1d3;
+    background-color: #fce38a;
 }
