@@ -32,7 +32,6 @@ img {
 /* HEADER */
 
 .wrapper {
-  width: 100vw;
   height: 540px;
   background-image: url(../img/body.jpg);
   background-repeat: no-repeat;
@@ -44,6 +43,7 @@ img {
   display: block;
   padding-top: 20px;
 }
+
 .navigation {
   margin-bottom: 115px;
   padding: 0;
@@ -62,7 +62,7 @@ img {
   text-decoration: none;
   font-size: 14px;
   text-align: center;
-  padding: 8px 0;
+  padding: 9px 0;
   cursor: pointer;
   border-radius: 18px;
   height: 36px;
@@ -76,7 +76,7 @@ img {
 
 
 .site-logo {
-  /* display: block; */
+  display: block;
   font-size: 20px;
   color: #ffffff;
   font-family: "Montserrat";
@@ -85,7 +85,7 @@ img {
   text-decoration: none;
   list-style: none;
   text-align: center;
-  padding: 8px 0rem;
+  padding: 8px 0px;
 }
 
 .site-logo:hover {
@@ -111,7 +111,7 @@ img {
   color: #ffffff;
   font-family: "Roboto";
   font-weight: 300;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .promo-btn {
@@ -205,7 +205,6 @@ img {
   color: #333333;
   font-family: "Montserrat";
   font-weight: 700;
-  padding-top: 1.56rem;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -216,6 +215,7 @@ img {
   color: #666666;
   font-family: "Roboto";
   font-weight: 300;
+  word-wrap: break-word;
   margin: 0 auto;
 }
 
@@ -233,7 +233,7 @@ img {
 
 /* MEDIA */
 
-@media (min-width: 768px) and (max-width:991px) {
+@media (min-width: 768px) {
 
   .wrapper {
     height: 700px;
@@ -244,15 +244,17 @@ img {
   }
 
   .promo-title {
+    width: 600px;
     font-size: 52px;
     line-height: 52px;
     margin-bottom: 45px;
+    margin: auto;
     padding: 0;
   }
 
   .promo-subtitle {
     font-size: 24px;
-    margin-bottom: 2.18rem;
+    margin-bottom: 35px;
   }
 
   .promo-btn {
@@ -280,7 +282,7 @@ img {
 
   /* SECTION PARTNERS */
 
-  .partners-title {
+   .partners-title {
 
     padding-top: 70px;
   }
